@@ -34,17 +34,27 @@ nav a {
 
 .page-layout {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
   padding: 20px;
 }
+@media (min-width: 700px) {
+  .page-layout {
+    flex-direction: row;
+  }
 
-main {
-  flex: 2;
+  main {
+    flex: 2;
+  }
+
+  aside {
+    flex: 1;
+  }
 }
 
+
 aside {
-  flex: 1;
+  
   background-color: #f0f0f0;
   padding: 16px;
 }
